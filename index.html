@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JuiceBox Recording Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Urbanist', sans-serif;
+      background-color: #000;
+      color: #FFD700;
+    }
+    header {
+      height: 100vh;
+      background: url('studio-placeholder.png') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .logo-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: url('juicebox-logo.png') center/contain no-repeat;
+      opacity: 0.5;
+      z-index: -1;
+      pointer-events: none;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      background: #FFD700;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #FFD700;
+      display: inline-block;
+    }
+    footer {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+    }
+    .footer-links a {
+      margin: 0 1rem;
+      color: #FFD700;
+      text-decoration: none;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-background"></div>
+
+  <header>
+    <h1>JuiceBox Recording Studios</h1>
+    <p>Premium Sound. Real Vibe. Get Juiced.</p>
+    <a href="#booking" class="btn">Book a Session</a>
+  </header>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>🎤 Vocal Recording (Hourly sessions)</li>
+      <li>🎚️ Mixing & Mastering (In-house & Remote)</li>
+      <li>🔥 Beat Production & Custom Tracks</li>
+      <li>🎧 Podcast & Voiceover Setup</li>
+    </ul>
+  </section>
+
+  <section id="studio">
+    <h2>Studio Tour</h2>
+    <p>Take a look inside our fully treated studio space designed for elite sound quality. Coming soon: 360° walkthrough.</p>
+    <img src="studio-placeholder.png" alt="Studio Preview" style="width:100%; border-radius: 10px;">
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <ul>
+      <li>$80/hr – Recording Session (with engineer)</li>
+      <li>$320 – 4-hour block session</li>
+      <li>Contact for full-day booking or custom packages</li>
+    </ul>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Session</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="What service are you interested in?" required></textarea><br><br>
+      <button type="submit" class="btn">Send Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JuiceBox Recording Studios</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+</body>
+</html>
