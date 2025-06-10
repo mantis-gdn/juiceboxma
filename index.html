@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
       background-color: #000;
       color: #FFD700;
     }
+
     header {
       height: 100vh;
       background: url('studio-placeholder.png') center/cover no-repeat;
@@ -22,6 +24,7 @@
       text-align: center;
       position: relative;
     }
+
     .logo-background {
       position: fixed;
       top: 0;
@@ -33,6 +36,7 @@
       z-index: -1;
       pointer-events: none;
     }
+
     header h1 {
       font-size: 3rem;
       margin: 0;
@@ -40,6 +44,7 @@
       padding: 1rem;
       border-radius: 10px;
     }
+
     header p {
       font-size: 1.25rem;
       margin: 1rem 0;
@@ -47,6 +52,7 @@
       padding: 0.5rem 1rem;
       border-radius: 10px;
     }
+
     .btn {
       padding: 1rem 2rem;
       background: #FFD700;
@@ -55,28 +61,34 @@
       border-radius: 5px;
       font-weight: bold;
     }
+
     section {
       padding: 4rem 2rem;
       max-width: 1000px;
       margin: auto;
     }
+
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
       border-bottom: 2px solid #FFD700;
       display: inline-block;
     }
+
     footer {
       background: #111;
       padding: 2rem;
       text-align: center;
     }
+
     .footer-links a {
       margin: 0 1rem;
       color: #FFD700;
       text-decoration: none;
     }
-    form input, form textarea {
+
+    form input,
+    form textarea {
       width: 100%;
       padding: 1rem;
       margin-bottom: 1rem;
@@ -87,6 +99,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="logo-background"></div>
 
@@ -108,28 +121,46 @@
 
   <section id="studio">
     <h2>Studio Tour</h2>
-    <p>Take a look inside our fully treated studio space designed for elite sound quality. Coming soon: 360° walkthrough.</p>
+    <p>Take a look inside our fully treated studio space designed for elite sound quality. Coming soon: 360°
+      walkthrough.</p>
     <img src="studio-placeholder.png" alt="Studio Preview" style="width:100%; border-radius: 10px;">
   </section>
 
   <section id="pricing">
     <h2>Pricing</h2>
     <ul>
-      <li>$80/hr – Recording Session (with engineer)</li>
-      <li>$320 – 4-hour block session</li>
-      <li>Contact for full-day booking or custom packages</li>
+      <li>Vocal Recording Session (1 hour, incl. engineer) – $70</li>
+      <li>Band Tracking Session (up to 5 members) – $120/hr</li>
+      <li>Voiceover / Podcast Recording – $60/hr</li>
+      <li>Basic Mix (up to 12 stems) – $150/song</li>
+      <li>Full Mix + Master (up to 30 stems) – $250/song</li>
+      <li>Standalone Mastering – $75/song</li>
+      <li>Beat Lease (non-exclusive) – $40–$100</li>
+      <li>Custom Beat Production – $200–$300/song</li>
+      <li>Instrumental Arrangement from Demo – $250–$400</li>
+      <li>Single Package (Record + Mix + Master 1 song) – $300</li>
+      <li>EP Starter Pack (3 songs full service) – $750</li>
+      <li>Podcast Pilot Pack (record + edit) – $250</li>
+      <li>Reels + Recording Combo (30-min + 2 videos) – $150</li>
+      <li>Creative Consult (Song Planning / A&R) – $60/hr</li>
+      <li>Electronic Press Kit (EPK Design) – $100</li>
+      <li>Promo Snippet Mix (15s/30s) – $40/version</li>
+      <li>Raw Multitrack Export – $30</li>
+      <li>1-Year Session File Storage – $40/song</li>
+      <li>Rush Delivery (48 hours) – +25% surcharge</li>
+      <li>Extra Mix Revision – $25 each</li>
     </ul>
   </section>
 
   <section id="booking">
     <h2>Book a Session</h2>
     <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-      </form>            
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
@@ -140,4 +171,5 @@
     </div>
   </footer>
 </body>
+
 </html>
